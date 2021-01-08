@@ -1,0 +1,168 @@
+.main-inbox{
+    display: flex;
+    .displays{
+        display: none;
+    }
+    .inbox1{
+        height: 700px;
+        background-color:#ffff;
+        flex-grow: 2;
+        padding: 10px;
+        text-align: center;
+        .butt{
+            padding: 4px 15px;
+            // margin: auto 20px;
+        }
+        .bnt-area{
+            background-color:#F9F9F9;
+        }
+        .mail-items{
+            margin-top: 30px;
+            text-align: start;
+            margin-left: 30px;
+            color: #9097A8;
+        }
+        .lab{
+            text-align: start;
+            padding-left: 30px;
+        }
+        .dosts{
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            
+            
+            margin: 6px 10px ;
+        }
+        .dclr1{
+            background-color: rgb(14, 241, 63);
+        }
+        .dclr2{
+            background-color: rgb(0, 0, 0);
+        }
+        .dclr3{
+            background-color: rgb(184, 37, 37);
+        }
+        .flex-item{
+            display: flex;
+        }
+       
+
+    }
+    .inbox2{
+        height: 50px;
+        background-color:#F9F9F9;
+        flex-grow: 4;
+        .email-color{
+            background-color:#F9F9F9; ;
+        }
+.search-email{
+    padding: 6px 90px;
+    border-color: rgb(155, 148, 148);
+}
+        .inbox-part{
+            display: flex;
+            justify-content: space-around;
+            transform: translateY(12px);
+         
+            
+        }
+        .email-main-name{
+            font-size: 14px;
+            color: #9097A8;
+        }
+        .email-main-name-sec{
+            font-size: 14px;
+            
+        }
+        .inbox-mail-names{
+            display: flex;
+            justify-content: space-around;
+        }
+        .email-overflow{
+            overflow-y: scroll;
+            height: 70vh;
+        }
+        .inbox-icons{
+            display: flex;
+            justify-content: space-between;
+        }
+        .left-icon{
+            margin-right: 20px;
+            font-size: 25px;
+        }
+        .right-icon{
+            margin-right: 20px;
+            font-size: 25px;
+        }
+    }
+    .inbox3{
+        height: 50px;
+        background-color: #F9F9F9;
+        max-width: 45rem; 
+        flex-grow: 8;
+        .email-items{
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(10px);
+        }
+        .left-icon{
+            
+            margin: 0px 10px;
+        }
+        .sub-item{
+            display: flex;
+            justify-content: start;
+            margin-left: 20px;
+            margin-top: 30px;
+            
+            .family-btn{
+                padding: 5px 15px;
+                background-color: #74B49B;
+                color: #fff;
+                text-decoration: none;
+                margin-left: 20px;
+               
+            }
+            .email-head{
+                font-size: 20px;
+            }
+            
+        }
+        .email-details{
+            display: flex;
+            justify-content: space-around;
+            background-color: #fff;
+            transform: translateY(10px);
+            margin-bottom: 20px;
+            margin-top: 20px;
+            padding: 20px 10px;
+            
+        }
+        .email-body{
+            background-color: #fff;
+        }
+        .email-body-text{
+            max-width: 40rem;   
+            text-align: justify;
+            padding: 20px;
+            color: #9097A8;
+}
+        
+        .poppu{
+            display: none;
+        }
+        .reply{
+            border:.5px solid;
+            border-color: #c7ccd2;
+            background-color: #fff;
+            color: #9097A8;
+            padding: 30px;
+        }
+       .mail-add{
+        color: #9097A8;
+        font-size: 14px;
+       }
+
+    }
+}
