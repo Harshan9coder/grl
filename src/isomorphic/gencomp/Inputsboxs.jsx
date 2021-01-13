@@ -6,7 +6,7 @@ function Inputsboxs(props) {
 
     <div>
       <input
-        type="text"
+        type="text "
         placeholder={props.placeholder}
         class="form-control"
         id={props.id}

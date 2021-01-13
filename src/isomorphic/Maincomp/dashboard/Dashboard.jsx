@@ -2,6 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Cards from "../../gencomp/Cards";
 import girl from "./../../media/girl.jpg";
+import Images from "../../gencomp/Images";
 
 import graph1 from "./../../media/graph1.png";
 import graph2 from "./../../media/graph2.png";
@@ -84,7 +85,8 @@ function Dashboard() {
                       <FontAwesomeIcon className={i.className} icon={i.icon} />
                     );
                   })}
-                  <img className="girl fn" src={girl} alt="fireSpot" />
+                  
+                  <Images className="girl fn" src={girl} alt="fireSpot" />
                 </div>
               </div>
             </div>
@@ -99,13 +101,9 @@ function Dashboard() {
             })}
           </div>
           <div className="income-cards">
-
             {Array.apply(null, { length: 4 }).map((e, i) => (
               <IncomeCard key={i} />
             ))}
-
-
-
           </div>
           <div className="card-groups">
             <div className="graph-cards1">
@@ -116,7 +114,7 @@ function Dashboard() {
             <div className="graph-cards2">
               {results.map((i) => {
                 return <Results ic={i.ic} text={i.text} clr={i.clr} />;
-              })}             
+              })}
             </div>
 
             <div className="graph-cards3">
@@ -125,10 +123,12 @@ function Dashboard() {
           </div>
           <div className="two-graphs">
             <div className="graph-item1">
-              <img className="graphimg" src={graph1} alt="fireSpot" />
+              
+              <images className="graphimg" src={graph1} alt="fireSpot" />
             </div>
             <div className="graph-item2">
-              <img className="graphimg" src={graph2} alt="fireSpot" />
+              
+              <Images className="graphimg" src={graph2} alt="fireSpot"/>
             </div>
           </div>
 
@@ -137,10 +137,12 @@ function Dashboard() {
               <Girldetailcard />
             </div>
             <div className="thiredgraph2">
-              <img src={graph31} alt="fireSpot" />
+              
+              <Images src={graph31} alt="fireSpot"/>
             </div>
             <div className="thiredgraph3">
-              <img src={graph32} alt="fireSpot" />
+              
+              <Images src={graph32} alt="fireSpot"/>
             </div>
           </div>
         </div>

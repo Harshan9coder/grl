@@ -4,6 +4,7 @@ import girl from "./../../media/girl.jpg";
 
 import Chatbox from "../../../isomorphic/gencomp/Chatbox";
 
+import Images from "../../gencomp/Images";
 import {
   faBars,
   faSearch,
@@ -38,12 +39,13 @@ function Chat() {
 
               <div className="right-items">
                 <div>
-                  {
-                    fonticons.map(i=>{
-                      return <FontAwesomeIcon className={i.className} icon={i.icon}/>
-                    })
-                  }                                  
-                  <img className="girl fn" src={girl} alt="fireSpot" />
+                  {fonticons.map((i) => {
+                    return (
+                      <FontAwesomeIcon className={i.className} icon={i.icon} />
+                    );
+                  })}
+
+                  <Images className="girl fn" src={girl} alt="fireSpot" />
                 </div>
               </div>
             </div>

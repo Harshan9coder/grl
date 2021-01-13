@@ -110,21 +110,14 @@ function LogIn() {
             })}
             <div className="check-sec">
               <div class="mb-3 form-check">
-                <input
-                  className="inputs"
-                  type="checkbox"
-                  class="form-check-input"
-                  id="exampleCheck1"
-                />
+                <Inputsboxs type="checkbox" className="inputs" />
 
                 <label class="form-check-label Remember" for="exampleCheck1">
                   Remember me
                 </label>
               </div>
-              {/* <Buttons name="Submit" className="signupbtn"/> */}
-              <button className="signupbtn" type="submit">
-                Submit
-              </button>
+
+              <Buttons className="signupbtn" name="Submit" />
             </div>
             <p className="hint">
               <span>* &nbsp; </span> username: demo password: demodemo or just
@@ -134,7 +127,7 @@ function LogIn() {
           <hr className="hr-ln"></hr>
           <div className="all-btns">
             {btn.map((b) => {
-              return <Buttons name={b.name} className={b.className} />;
+              return <Buttons name={b.name} className={b.className}/>;
             })}
           </div>
           <p className="for-got">Forgot password</p>

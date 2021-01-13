@@ -65,8 +65,9 @@ function MainRecipe() {
   return (
     <RecipeContext.Provider value={recipeContextvalue}>
       <div className="main-box">
-        {/* <RecipeList recipes={recipe} />
-        <Recipeedit /> */}
+        <RecipeList recipes={recipe} />
+        
+        <Recipeedit />
       </div>
         <Getdata/>
     </RecipeContext.Provider>

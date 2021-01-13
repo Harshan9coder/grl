@@ -7,11 +7,12 @@ import {
   faBars,
   faSearch,
   faBell,
-  faChartPie,
+  
   faCartPlus,
 } from "@fortawesome/free-solid-svg-icons";
 import IncomeCard from "../../gencomp/IncomeCard";
 import Leftnavmenus from "../../gencomp/Leftnavmenus";
+import Inbox from "../../gencomp/Inbox";
 
 let fonticons = [
   { className: "fn", icon: faSearch },
@@ -20,8 +21,6 @@ let fonticons = [
   { className: "fn", icon: faCartPlus },
 ];
 let card = [];
-
-
 
 function Dashboard() {
   return (
@@ -56,24 +55,11 @@ function Dashboard() {
           </div>
 
           <div className="income-cards displays">
-      {
-        
-Array.apply(null, { length: 4 }).map((e, i) => (
-  <IncomeCard className="busterCards" key={i}/>
-    
-  
-))
-
-      }      
-
-{/* 
-            <IncomeCard />
-            <IncomeCard />
-            <IncomeCard />
-            <IncomeCard /> */}
-
-
+            {/* {Array.apply(null, { length: 4 }).map((e, i) => (
+              <IncomeCard className="busterCards" key={i} />
+            ))} */}
           </div>
+          <Inbox/>
         </div>
       </div>
     </div>

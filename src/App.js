@@ -20,6 +20,7 @@ import Ecommerce from "./isomorphic/Maincomp/dashboard/Ecommerce";
 import Demo1 from "./isomorphic/Maincomp/Demo/Demo1";
 import RecipeList from "./isomorphic/Maincomp/Cooking/RecipeList";
 import MainRecipe from "./isomorphic/Maincomp/Cooking/MainRecipe";
+import Books from "./isomorphic/Maincomp/Cooking/Books";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path="/ecommerce" component={Ecommerce} />
         <Route path="/demo" component={Demo1} />
         <Route path="/recipe" component={MainRecipe} />
+        <Books/>
         
       
       </Switch>
